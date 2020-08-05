@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http_equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    
+    <meta name="description" content="">
+    <title>C. Benson Fabrication</title>
+    <link  rel="shortcut icon" type="image/png" href="" alt=""/>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="animate.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"> -->
+    
+
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
+
+        <!-- Schema Markup -->
+        <!-- <script type="application/ld+json">
+
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "image": "https://www.doncastermathstutor.com/images/gradu8_maths_tutor.png",
+            "@id": "https://www.doncastermathstutor.com",
+            "name": "Gradu8 Maths",
+            "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "6 St Andrews Cl",
+            "addressLocality": "Doncaster",
+            "postalCode": "DN4 6SW",
+            "addressCountry": "GB"
+            },
+            "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "ratingCount": "9"
+            },
+            "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 53.499020,
+            "longitude": -1.056710
+            },
+            "url": "https://www.doncastermathstutor.com",
+            "telephone": "+447432263120",
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+                ],
+                "opens": "08:00",
+                "closes": "22:00"
+            },
+            "review": [
+            {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Kiera Glendenning"
+            },
+            "datePublished": "2017-07-09",
+            "reviewBody": "Fantastic tuition, friendly and helpful. Helped me achieve my A* at GCSE, top grade at FSMQ and A*/A at maths and further maths ensuring I secured a place at London School of Economics. Would recommend to anyone wanting an excellent maths tutor."
+            }]
+        }
+        </script> -->
+    
+        <!-- OpenGraph -->
+        <!-- <meta property="og:title" content="Doncaster Maths Tutor | A levels, GCSE | GRADU8 MATHS"/>
+        <meta property="og:image" content="https://www.doncastermathstutor.com/images/gradu8_maths_tutor.png"/>
+        <meta property="og:url" content="https://www.doncastermathstutor.com"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:description" content="Friendly maths tutor in Doncaster. Teach students: A level (+ Further Maths), GCSE, SATs, FSMQ, MAT, STEP and undergraduate engineering exams."/>
+        <meta property="og:site_name" content="GRADU8 MATHS"/> -->
+    
+        <!-- TwitterCard -->
+        <!-- <meta property="twitter:card" content="summary">
+        <meta property="twitter:title" content="Doncaster Maths Tutor | A levels, GCSE | GRADU8 MATHS">
+        <meta property="twitter:image" content="https://www.doncastermathstutor.com/images/gradu8_maths_tutor.png">
+        <meta property="twitter:description" content="Friendly maths tutor in Doncaster. Teach students: A level (+ Further Maths), GCSE, SATs, FSMQ, MAT, STEP and undergraduate engineering exams."> -->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header>
+          
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top wow fadeInDown" id="navbar" data-wow-duration="1s">
+                   
+                <div class="container">
+        
+                  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#aboutUs" title="About me">About Us<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#services" title="Services">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#ourWork" title="Recommendations">Our Work</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#contact" title="Contact">Contact</a>
+                        </li>
+                    </ul>
+        
+                  </div>
+                </div>
+            </nav>
+        
+        
+            <div class="view hero fullWidth" style="position: absolute;">
+                        
+                
+                <div class="row h-100 mx-5">
+        
+                    <div class="col-12 text-center mt-auto p-0 pt-5">
+    
+                        <img src="images/logo.png" class="title wow fadeIn" data-wow-duration="2s" alt="C. Benson Fabrication">
+                    
+                    </div>
+    
+                    <div class="col-md-12 text-center my-auto wow fadeIn" data-wow-duration="2s">
+                        <h4>
+                            <!-- <mark> -->
+                                Bespoke welding and fabrication services in Doncaster.<br>
+                                We go above and beyond to serve our customers’ needs.
+                            <!-- </mark> -->
+                        </h4>
+                    </div>
+    
+                    <div class="col-md-12 text-center">
+                        <button onclick="window.location.href='#services'" class="heroButton wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">See Our Services</button>
+                        <button onclick="window.location.href='#contact'" class="heroButton wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">Make An Enquiry</button>
+                    </div>
+    
+                </div>   
+    
+            </div>
+        
+        </header>
+    
+        <div class="main">
+            <div class="row fullWidth h-100 aboutUs" id="aboutUs">
+    
+                <div class="col-md-7 pl-0" style="height: 100vh;">
+                    
+                    <p class="row h-25 big ml-4 py-3 d-flex d-column align-items-center wow fadeIn" style="z-index: 1;position: relative;" data-wow-duration="2s" data-wow-delay="2s">
+                        Over 25 Years in </br> Welding & Fabrication.
+                    </p>   
+                    
+                    <div class="row h-75 aboutUsBackground d-flex d-column wow fadeIn" style="z-index: 0;" data-wow-duration="2s">
+                        <div class="align-self-start topPhotoFade" style="z-index: 0;"></div>
+                        
+                        <p class="px-4 wow fadeIn rellax" style="position:absolute; bottom: 0;" data-wow-duration="3s" data-rellax-speed="1" data-rellax-percentage="0.5">
+                            Reliable.</br>
+                            Versatile.</br>
+                            Professional.</br>
+                        </p>
+                        <div class="justify-self-end sidePhotoFade"></div>
+                        <div class="align-self-end bottomPhotoFade"></div>
+
+
+                    </div>
+                
+                </div>
+
+                <div class="col-md-5 aboutUsLight d-flex flex-column align-items-end p-4 wow fadeIn rellax"  data-wow-duration="3s" data-rellax-speed="-1" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" >
+                    <h2>About Us</h2>
+                    <p class="text-justify">                 
+                        A family run business with over 25 years’ experience in the welding and fabrication industry. We are able to offer a wide range of solutions to suite any project and always go above and beyond to ensure the needs of our customers are always fulfilled.
+                        
+                        <br><br>
+                        We offer free consultation services either on site or remotely to fully understand all of our customers’ requirements, we have a wide range of experience from structural steel framework right down to bespoke handmade furniture.
+                    </p>
+                </div>
+
+                <div class="row fullWidth">
+                    <div class="testimonials m-5 p-5 wow fadeIn" data-wow-duration="3s">
+
+                        <h3 class="text-center">Testimonials</h3>
+
+                        <div id="slides" class="col-md-12 align-self-center carousel slide carousel-fade" data-ride="carousel" data-interval="8000">
+
+                            <ul class="carousel-indicators">
+                                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                                <li data-target="#slides" data-slide-to="1"></li>
+                                <li data-target="#slides" data-slide-to="2"></li>
+                            </ul>
+            
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item d-flex align-items-center">
+                                    <div>
+                                        <p class="text-center font-italic p-4">
+                                            “I just can’t get enough of C Benson Fabrication. I want to get a T-Shirt with C Benson Fabrication on it so I can show it off to everyone. I don’t know what else to say.”
+                                        </p>
+                                        <h5 class="font-italic text-right">Thibaud F.</h5>
+                                    </div>
+                                </div>
+            
+                                <div class="carousel-item active d-flex align-items-center">
+                                    <div>
+                                        <p class="text-center font-italic p-4">
+                                            "I will let my mum know about this, she could really make use of C. Benson Fabrication! C. Benson Fabrication was worth a fortune to my company. I would be lost without C. Benson Fabrication."
+                                        </p>
+                                        <h5 class="font-italic text-right">Dorita D.</h5>
+                                    </div>
+                                </div>
+                
+                                <div class="carousel-item d-flex align-items-center">
+                                    <div class="">
+                                        <p class="text-center font-italic p-4">
+                                            "I couldn't have asked for more than this."
+                                        </p>
+                                        <h5 class="font-italic text-right">
+                                            Clerissa Z.
+                                        </h5>
+                                    </div>
+                                </div>
+            
+                            </div>
+
+                            <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+            
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div> 
+
+            <div class="services fullWidth " id="services">
+                
+                <h2 class="p-5 wow fadeIn">Our Services</h2>
+                <!-- <hr style="background-color: white;width: 80%;"> -->
+                <div class="col-12 px-5 py-2  wow fadeIn">
+                    <p>
+                        Drawing upon our extensive knowledge and experience we manage, manufacture and deliver solutions time after time, our highly skilled team continue to achieve a high standard of quality and service. From maintenance and repair to providing new projects, everything we do is reliability centred, providing cost effective solutions tailored to our customers’ needs. 
+                    </p>
+                </div>
+                <!-- <hr style="background-color: white;width: 80%;"> -->
+
+
+                <!-- <script>
+                $(function() {
+                    $(".content").hide();
+                    $("#services1div").show();
+
+                    $(".serviceBtn").on("click",function(e) {
+                        e.preventDefault();
+                        $(".content").hide();
+                        $("#"+this.id+"div").show();
+                        $('button').removeClass('active');
+                        $(this).addClass('active')
+                    });
+                });
+                </script> -->
+
+                <div class="row fullWidth pt-5">
+
+                    <div class="col-12 col-md-6 fabricationBox p-5 wow fadeInLeft rellax" data-rellax-speed="1" data-rellax-percentage="0.5" data-wow-duration="2s">
+                        <div class="col pr-5">
+                            <h3>Fabrication</h3>
+                            <p style="z-index: 1;">
+                                We offer a full Metal Inert Gas (MIG) fabrication service carried out by coded welders in mild steel, stainless steel as well as aluminium up to almost any thickness. Material can be supplied free issue, or we are able to source our own material from our trusted suppliers.
+                                <br><br>
+                                
+                                We can also offer subcontract laser cutting service produced from your own part  drawings, ideal for prototyping or small batch work in a variety of finishes including paint, powder coating and hot dip galvanising.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-6 machineBox p-5 wow fadeInRight rellax" data-rellax-speed="-1" data-rellax-percentage="0.5" data-wow-duration="2s">
+                        <div class="col text-right pl-5">
+                            <h3>Machining</h3>
+                            <p>
+                                Providing a bespoke machining service, we can supply precision made components, parts, prototypes and one off bespoke items in small to medium production runs, and can work most materials, including mild steel, copper, brass, aluminium, stainless steel, steel alloys, nylons and plastics. Operations include: turning, boring, drilling and tapping.
+                            </p>
+                            
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- <div class="navigation col-sm-3 row m-0">
+                        <div class="col-sm-12 col-6 p-0 m-0">
+                            <button class="serviceBtn active" type="button" id="services1">Bespoke Fabrication</button>
+                            <button class="serviceBtn" type="button" id="services2">Welding</button>
+                            <button class="serviceBtn" type="button" id="services3">CNC Machining</button>                            
+                        </div>
+
+                        <div class="col-sm-12 col-6 p-0 m-0">
+                            <button class="serviceBtn" type="button" id="services4">Laser Cutting</button>
+                            <button class="serviceBtn" type="button" id="services5">Powder Coating</button>
+                            <button class="serviceBtn" type="button" id="services6">Forming & Folding</button>
+                        </div>
+
+                    </div> -->
+    
+
+                    <!-- <div class="service col-sm-9 col-12 m-0">
+
+                        <div id="services1div" class="content h-100">
+                            <h3>Bespoke Fabrication</h3>
+                            <br>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis voluptas commodi aliquid nemo iste omnis saepe obcaecati vel minima ducimus. Eius voluptatibus in quos voluptatem tempore impedit laudantium sunt eligendi!</p>
+                        </div>
+
+                        <div id="services2div" class="content h-100">
+                            <h3 class="col h-50">Welding</h3>
+                            <br>
+                            <p class="col h-50">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis voluptas commodi aliquid nemo iste omnis saepe obcaecati vel minima ducimus. Eius voluptatibus in quos voluptatem tempore impedit laudantium sunt eligendi!</p>
+                        </div>
+
+                        <div id="services3div" class="content h-100">
+                            <h3>CNC Machining</h3>
+                            <br>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis voluptas commodi aliquid nemo iste omnis saepe obcaecati vel minima ducimus. Eius voluptatibus in quos voluptatem tempore impedit laudantium sunt eligendi!</p>
+                        </div>
+
+                        <div id="services4div" class="content h-100">
+                            <h3>Laser Cutting</h3>
+                            <br>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis voluptas commodi aliquid nemo iste omnis saepe obcaecati vel minima ducimus. Eius voluptatibus in quos voluptatem tempore impedit laudantium sunt eligendi!</p>
+                        </div>
+
+                        <div id="services5div" class="content h-100">
+                            <h3>Powder Coating</h3>
+                            <br>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis voluptas commodi aliquid nemo iste omnis saepe obcaecati vel minima ducimus. Eius voluptatibus in quos voluptatem tempore impedit laudantium sunt eligendi!</p>
+                        </div>
+
+                        <div id="services6div" class="content h-100">
+                            <h3>Forming & Folding</h3>
+                            <br>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis voluptas commodi aliquid nemo iste omnis saepe obcaecati vel minima ducimus. Eius voluptatibus in quos voluptatem tempore impedit laudantium sunt eligendi!</p>
+                        </div>
+
+                    </div> -->
+
+                </div>
+                    
+            </div>
+
+            <script>
+
+                var prevScrollpos = window.pageYOffset;
+
+                window.onscroll = function() {
+
+                    if (window.pageYOffset == 0) {
+                        document.getElementById("navbar").style.top = "0";
+                    } 
+                    else if (document.getElementById("myModal").style.display == "block") {
+                        document.getElementById("navbar").style.top = "-70px";
+                    } 
+                    else {
+                        if (hasClass(document.getElementById("navbar"),"show") == false) {
+                            // console.log("yoyo")
+                        var currentScrollPos = window.pageYOffset;
+                        if (prevScrollpos > currentScrollPos) {
+                            document.getElementById("navbar").style.top = "0";
+                            // console.log("123")
+                        } else {
+                            document.getElementById("navbar").style.top = "-70px";
+                        }
+                        prevScrollpos = currentScrollPos;
+                        }
+                    }
+                }
+
+                function hasClass(element, className) {
+                    return (' ' + element.className + ' ').indexOf(' ' + className+ ' ') > -1;
+                }
+
+                function collapseNav() {
+                    document.getElementById("navbar").style.top = "-70px";
+                }
+
+                function openModal() {
+                    document.getElementById("myModal").style.display = "block";
+                }
+                
+                function closeModal() {
+                    document.getElementById("myModal").style.display = "none";
+                }
+                
+                var slideIndex = 1;
+                // showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    var captionText = document.getElementById("caption");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    // dots[slideIndex-1].className += " active";
+                    // captionText.innerHTML = dots[slideIndex-1].alt;
+                }
+            </script>
+
+            <div class="ourWork fullWidth pb-5 wow fadeIn" id="ourWork">
+                <h2 class="p-5">Our Work</h2>
+
+                <hr style="background-color: white;width: 80%; height: 2px;">
+                <br>
+                <p class="text-center p-5">
+                    <!-- <mark> -->
+                        We have manufactured bespoke products from .... to ... <br><br>
+                        We can manufacture furniture in all shapes, sizes and finishes. <br><br>
+                        See examples of our work.
+                    <!-- </mark> -->
+
+                    
+                </p>
+
+                <hr style="background-color: white;width: 80%;height: 2px;">
+
+                <div class="row fullWidth">
+                    
+                    <div class="col-6 col-lg-4">
+                        <div class="galleryImg mx-auto wow fadeInUp" onclick="collapseNav()">
+                            <img class="img-fluid " src="images/img1.jpg">
+                            <div class="overlay m-auto" onclick="openModal();currentSlide(1);">
+                                <div class="overlayText">Modified Lifting Frame</div>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="col-6 col-lg-4 ">
+                        <div class="galleryImg mx-auto wow fadeInUp" onclick="collapseNav()">
+                            <img class="img-fluid" src="images/img2.jpeg">
+                            <div class="overlay m-auto" onclick="openModal();currentSlide(2)">
+                                <div class="overlayText">Aluminium Steps w/ Hand Rail</div>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="col-6 col-lg-4 ">
+                        <div class="galleryImg mx-auto wow fadeInUp" onclick="collapseNav()">
+                            <img class="img-fluid" src="images/img3.jpeg">
+                            <div class="overlay m-auto" onclick="openModal();currentSlide(3)">
+                                <div class="overlayText">Mild Steel Frame</div>
+                            </div>
+                        </div>    
+                    </div>
+
+
+
+                    <div class="col-6 col-lg-4">
+                        <div class="galleryImg mx-auto wow fadeInUp" onclick="collapseNav()">
+                            <img class="img-fluid" src="images/img4.jpeg">
+                            <div class="overlay m-auto" onclick="openModal();currentSlide(4)">
+                                <div class="overlayText">Mild Steel Frame Roller Table w/ Stainless Steel Rollers</div>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="col-6 col-lg-4">
+                        <div class="galleryImg mx-auto wow fadeInUp" onclick="collapseNav()">
+                            <img class="img-fluid" src="images/img5.jpg">
+                            <div class="overlay m-auto" onclick="openModal();currentSlide(5)">
+                                <div class="overlayText">Machined Bushes</div>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="col-6 col-lg-4">
+                        <div class="galleryImg mx-auto wow fadeInUp" onclick="collapseNav()">
+                            <img class="img-fluid" src="images/img6.jpeg">
+                            <div class="overlay m-auto" onclick="openModal();currentSlide(6)">
+                                <div class="overlayText">Handrails</div>
+                            </div>
+                        </div>    
+                    </div>
+
+
+
+                    <div class="col-6 col-lg-4">
+                        <div class="galleryImg mx-auto wow fadeInUp" onclick="collapseNav()">
+                            <img class="img-fluid" src="images/img7.jpeg">
+                            <div class="overlay m-auto" onclick="openModal();currentSlide(7)">
+                                <div class="overlayText">Disabled Ramp Handrails</div>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="col-6 col-lg-4">
+                        <div class="galleryImg mx-auto wow fadeInUp" onclick="collapseNav()">
+                            <img class="img-fluid" src="images/img8.jpeg">
+                            <div class="overlay m-auto" onclick="openModal();currentSlide(8)">
+                                <div class="overlayText">Lifting Cage</div>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="col-6 col-lg-4">
+                        <div class="galleryImg mx-auto wow fadeInUp" onclick="collapseNav()">
+                            <img class="img-fluid" src="images/img9.jpeg">
+                            <div class="overlay m-auto" onclick="openModal();currentSlide(9)">
+                                <div class="overlayText">Home Furniture</div>
+                            </div>
+                        </div>    
+                    </div>
+
+
+
+                    <div class="col-6 col-lg-4">
+                        <div class="galleryImg mx-auto wow fadeInUp" onclick="collapseNav()">
+                            <img class="img-fluid" src="images/img10.jpeg">
+                            <div class="overlay m-auto" onclick="openModal();currentSlide(10)">
+                                <div class="overlayText">Home Furniture</div>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="col-6 col-lg-4">
+                        <div class="galleryImg mx-auto wow fadeInUp" onclick="collapseNav()">
+                            <img class="img-fluid" src="images/img11.jpg">
+                            <div class="overlay m-auto" onclick="openModal();currentSlide(11)">
+                                <div class="overlayText">Home Furniture</div>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="col-6 col-lg-4">
+                        <div class="galleryImg mx-auto wow fadeInUp" onclick="collapseNav()">
+                            <img class="img-fluid" src="images/img12.jpeg">
+                            <div class="overlay m-auto" onclick="openModal();currentSlide(12)">
+                                <div class="overlayText">Decorative Railings</div>
+                            </div>
+                        </div>    
+                    </div>
+
+
+                </div>
+
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content" >
+                    
+                        <div class="mySlides text-center">
+                        <div class="numbertext">1 / 12</div>
+                        <div class="productDesc">Modified Lifting Frame</div>
+                        <img class="img-fluid" src="images/img1.jpg">
+                        </div>
+                    
+                        <div class="mySlides text-center">
+                        <div class="numbertext">2 / 12</div>
+                        <div class="productDesc">Aluminium Steps w/ Hand Rail</div>
+                        <img class="img-fluid" src="images/img2.jpeg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides text-center">
+                        <div class="numbertext">3 / 12</div>
+                        <div class="productDesc">Mild Steel Frame</div>
+                        <img class="img-fluid" src="images/img3.jpeg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides text-center">
+                        <div class="numbertext">4 / 12</div>
+                        <div class="productDesc">Mild Steel Frame Roller Table w/ Stainless Steel Rollers</div>
+                        <img class="img-fluid" src="images/img4.jpeg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides text-center">
+                        <div class="numbertext">5 / 12</div>
+                        <div class="productDesc">Machined Bushes</div>
+                        <img class="img-fluid" src="images/img5.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides text-center">
+                        <div class="numbertext">6 / 12</div>
+                        <div class="productDesc">Handrails</div>
+                        <img class="img-fluid" src="images/img6.jpeg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides text-center">
+                        <div class="numbertext">7 / 12</div>
+                        <div class="productDesc">Disabled Ramp Handrails</div>
+                        <img class="img-fluid" src="images/img7.jpeg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides text-center">
+                        <div class="numbertext">8 / 12</div>
+                        <div class="productDesc">Lifting Cage</div>
+                        <img class="img-fluid" src="images/img8.jpeg" style="width:100%">
+                        </div>
+
+
+                        <div class="mySlides text-center">
+                        <div class="numbertext">9 / 12</div>
+                        <div class="productDesc">Home Furniture</div>
+                        <img class="img-fluid" src="images/img9.jpeg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides text-center">
+                        <div class="numbertext">10 / 12</div>
+                        <div class="productDesc">Home Furniture</div>
+                        <img class="img-fluid" src="images/img10.jpeg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides text-center">
+                        <div class="numbertext"> 11 / 12</div>
+                        <div class="productDesc">Home Furniture</div>
+                        <img class="img-fluid" src="images/img11.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides text-center">
+                        <div class="numbertext">12 / 12</div>
+                        <div class="productDesc">Decorative Railings</div>
+                        <img class="img-fluid" src="images/img12.jpeg" style="width:100%">
+                        </div>
+                    
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                        <div class="caption-container">
+                        <p id="caption"></p>
+                        </div>
+
+                    </div>
+                    </div>
+
+
+            </div>
+
+            <div class="contact fullWidth wow fadeIn" id="contact">
+                <h2 class="p-5 text-center ">Contact</h2>
+                <hr style="background-color: black;width: 80%; height: 2px;">
+                <p class="text-center p-5 m-0">
+                    <!-- <mark> -->
+                        If you have a problem that needs solving, we would love to hear from you. 
+                    <!-- </mark> -->
+                </p>
+
+                <div class="row">
+                    <a class="callBtn mx-auto d-flex align-items-end justify-content-center" href="tel:" title="">
+                        <p class="m-auto underline">
+                            Give us a call <i class="fas fa-phone phoneIcon"></i>
+                        </p>
+                    </a>
+                </div>
+
+
+                    <form class="row m-0 p-5" id="contact-form" method="post" action="send_form_email.php">
+
+                        <p class="col-12 text-center pb-3">
+                            Alternatively, complete the form below and we will be in touch shortly.
+                        </p>
+
+                        <div class="form-group col-12">
+                            <input name="name" type="text" class="form-control" id="nameInput" placeholder="Name">
+                        </div>
+    
+                        <div class="form-group col-md-12">
+                            <input name="email" type="email" class="form-control" id="emailInput" placeholder="Email">
+                        </div>
+    
+                        <div class="form-group col-12">
+                            <input name="phone" type="text" class="form-control" id="phoneInput" placeholder="Phone Number">
+                        </div>
+    
+                        <div class="form-group col-12">
+                            <textarea name="message" type="message" class="form-control messageForm" id="messageInput" placeholder="Message"></textarea>
+                        </div>
+            
+                        <div class="col-12 text-center pt-3">
+                            <button type="submit" class="btn enquiryBtn">Send Enquiry</button>
+                        </div>
+                        
+                    </form>
+
+                    <hr style="background-color: black;width: 80%; height: 2px;">
+
+                    <div class="row fullWidth pt-5 m-auto text-center">
+                        <a class="row m-auto contactText" href="https://www.linkedin.com/company/c-benson-fabrication/" target="_blank">
+                            <p class="m-auto contactText">Find us on Linked In &nbsp;</p><i class="fab fa-linkedin fa-2x "></i>
+                        </a>
+
+                    </div>
+                    
+
+                    <div class="row fullWidth m-0 p-5">
+
+                        <div class="col-md-4 row mx-auto p-1 d-flex d-column align-items-start justify-content-start">
+
+                            <div class="col-4">
+                                <div class="contactIcon text-center m-auto">
+                                    <i class="fas fa-phone fa-2x"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="col-8" >
+                                <a class="d-flex align-self-start" href="" target="_blank" title="">
+                                    <p class="contactText">
+                                        <!-- <mark> -->
+                                            Call us: <br>
+                                            07777 777 777
+                                        <!-- </mark> -->
+                                    </p>
+                                    </a>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 row mx-auto p-1">
+                            
+                            <div class="col-4 ">
+                                <div class="contactIcon text-center m-auto">
+                                    <i class="fas fa-envelope fa-2x"></i>
+                                </div>
+                            </div>
+
+                            
+                            <div class="col-8 ">
+                                <a href="" target="_blank" title="">
+                                    <p class="contactText">
+                                        <!-- <mark> -->
+                                            Email us: <br> 
+                                            email@gmail.com
+                                        <!-- </mark> -->
+                                    </p>
+                                    </a>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 row mx-auto p-1">
+                            
+                            <div class="col-4">
+                                <div class="contactIcon text-center m-auto">
+                                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                                </div>
+                            </div>
+    
+                            <div class="col-8 ">
+                                <a href="https://www.google.com/maps/place/53%C2%B024'28.0%22N+1%C2%B005'19.6%22W/@53.4077898,-1.0893265,19z/data=!3m1!4b1!4m14!1m7!3m6!1s0x4879090fe342e4f3:0x76ed154a7b94194f!2sB6463,+Styrrup!3b1!8m2!3d53.407759!4d-1.0887971!3m5!1s0x0:0x0!7e2!8m2!3d53.4077894!4d-1.0887783" target="_blank" title="">
+                                    <p class="contactText">
+                                        Address:  <br>                               
+                                        White House Farm, Main Street,
+                                        Styrrup, Doncaster,
+                                        DN11 8NB
+                                    </p>
+                                    </a>
+                            </div>
+
+                            
+
+                        </div>
+
+                    </div>
+
+                    <div class="row m-0 fullWidth">
+
+                        <a class="col-12 contactText text-center pb-5" href="https://www.google.com/maps/place/53%C2%B024'28.0%22N+1%C2%B005'19.6%22W/@53.4077898,-1.0893265,19z/data=!3m1!4b1!4m14!1m7!3m6!1s0x4879090fe342e4f3:0x76ed154a7b94194f!2sB6463,+Styrrup!3b1!8m2!3d53.407759!4d-1.0887971!3m5!1s0x0:0x0!7e2!8m2!3d53.4077894!4d-1.0887783" target="_blank">Get Directions</a>
+
+                        <div class="fullWidth" id="map" style="height: 300px;width: 100%;"></div>
+
+                    </div>
+
+
+            </div>
+
+            <div class="fullWidth p-4">
+                <p class="m-0">C. Benson Fabrication &copy; 2020</p>
+            </div>
+
+
+
+        </div>
+    </div>
+    
+
+    <script>
+        function initMap() {
+            var options = {
+                zoom: 12,
+                center: {lat:53.407789, lng:-1.088778}
+            }
+
+            var map = new google.maps.Map(document.getElementById("map"), options);
+
+            var marker = new google.maps.Marker({
+                position:{lat:53.407789, lng:-1.088778},
+                map:map
+            })
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1JnKy0XCYX_HIq8waHQv42ucAZoC_FXo&callback=initMap">
+    </script>
+
+      
+    <script src="rellax.min.js"></script>
+    <script>
+       var rellax = new Rellax('.rellax');
+    </script>
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+       
+    </body>
+
+</html>
